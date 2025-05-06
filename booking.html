@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання - CLOUD HOTEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;700&family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html" class="link_index">
+                    <div class="logo__background"></div>
+                    <div class="logo__cloud">CLOUD</div>
+                    <div class="logo__hotel">HOTEL</div>   
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <a href="aboutUs.html" class="nav__link">Про нас</a>
+                <a href="#" class="nav__link nav__link--active">Номери та ціни</a>
+                <a href="#" class="nav__link">Послуги</a>
+                <a href="#" class="nav__link">Контактна інформація</a>
+            </nav>
+
+            <div class="language">
+                <span class="language__text">UA</span>
+                <img class="language__icon" src="img/Group(1).svg" alt="">
+            </div>
+
+            <div class="social">
+                <img class="social__icon" src="img/Group.svg" alt="phone">
+                <img class="social__icon" src="img/Vector(1).svg" alt="Instagram">
+                <img class="social__icon" src="img/Vector.svg" alt="Facebook">
+            </div>
+        </header>
+
+        <main class="booking-page">
+            <div class="booking-container">
+                <h1 class="booking-title">БРОНЮВАННЯ</h1>
+                
+                <form class="booking-form">
+                    <section class="form-section date-selection">
+                        <h2 class="section-title">Вибір дати</h2>
+                        <div class="date-inputs">
+                            <div class="input-group">
+                                <label for="check-in" class="input-label">Заїзд:</label>
+                                <input type="date" id="check-in" class="form-input" value="2025-01-01" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="check-out" class="input-label">Виїзд:</label>
+                                <input type="date" id="check-out" class="form-input" value="2025-01-11" required>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="form-section guests-selection">
+                        <h2 class="section-title">Кількість гостей</h2>
+                        <div class="guests-inputs">
+                            <div class="input-group">
+                                <label for="adults" class="input-label">Дорослі:</label>
+                                <input type="number" id="adults" class="form-input" value="2" min="1" max="10" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="children" class="input-label">Діти:</label>
+                                <input type="number" id="children" class="form-input" value="0" min="0" max="10">
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="form-section room-selection">
+                        <h2 class="section-title">Тип номера</h2>
+                        <div class="input-group">
+                            <label for="room-type" class="input-label">Оберіть номер:</label>
+                            <select id="room-type" class="form-input" required>
+                                <option value="">-- Оберіть номер --</option>
+                                <option value="single">Одномістний</option>
+                                <option value="double">Двомістний</option>
+                                <option value="luxury">Люкс</option>
+                                <option value="suite">Напівлюкс</option>
+                            </select>
+                        </div>
+                    </section>
+        
+                    <section class="form-section personal-info">
+                        <h2 class="section-title">Контактна інформація</h2>
+                        <div class="input-group">
+                            <label for="full-name" class="input-label">ПІБ*</label>
+                            <input type="text" id="full-name" class="form-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="input-label">Номер телефону*</label>
+                            <input type="tel" id="phone" class="form-input" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="input-label">Email*</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                    </section>
+        
+                    <section class="form-section special-requests">
+                        <div class="input-group">
+                            <label for="message" class="input-label">Особливі побажання</label>
+                            <textarea id="message" class="form-input textarea" rows="4"></textarea>
+                        </div>
+                    </section>
+        
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">ЗАБРОНЮВАТИ</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
